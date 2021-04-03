@@ -137,8 +137,109 @@ summary{
   font-family: "Arvo", Georgia, serif;
   font-size: 28px;
   border-bottom: 2px solid;
+  color: #7cff87
 }
 
 *{
   outline: 0;
+}
+
+#zatixak{
+    width: 42%;
+    margin-bottom:-1%;
+    }
+
+#zatixak2{
+    width: 62%;
+    margin-bottom: -1%;
+}
+
+#zatixak3{
+  width: 72%;
+  margin-bottom: -1%;
+}
+
+#zatixak4{
+  width: 36%;
+  margin-bottom: -0.75%;
+}
+
+#zatixak5{
+  width: 50%;
+  margin-bottom: -1%;
+}
+
+#zatixak6{
+  width: 70%;
+  margin-bottom: -1%;
+}
+
+    details > summary {
+        list-style-type: none;
+    }
+    
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+    
+    details > summary::before {
+        content: '⇢  ';
+    }
+    
+    details[open] > summary::before {
+        content: '⇣         ';
+    }
+
+#formuliak{
+  max-width:100%;
+  max-height:100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+        
+#ariketak{
+    transition: all 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#ariketak:hover {
+    transform: scale(1.09);
+}
+
+.herena2{
+    width: 31%;
+    float: left;
+    margin: 2% 0 3% 2%;
+    text-align: center;
+    color:white;
+}
+
+details{
+margin-top: 0.5%;
+}
+
+.zatixa1 {
+float: left;
+width: 50%;
+}
+
+.zatixa2 {
+float: left;
+width: 50%;
+height: 30%;
+}
+
+.zatixa3, .zatixa4 {
+float: left;
+width: 30%;
+height: 50%;
+}
+
+.zatixa4{
+padding-left: 5%
 }

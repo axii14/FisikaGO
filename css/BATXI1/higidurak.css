@@ -91,8 +91,9 @@
     }
     }
 
-
-
+body{
+  font-family: Abel, "Lucida Console", monospace;
+}
 
     .aukerak {
       position: relative;
@@ -242,4 +243,15 @@ height: 50%;
 
 .zatixa4{
 padding-left: 5%
+}
+
+.zatixa5{
+float: left;
+width: 60%;
+}
+
+.zatixa6 {
+float: left;
+width: 40%;
+height: 30%;
 }

@@ -1,0 +1,271 @@
+:root {
+    --primary: #292929;
+    --light: #fa6538;
+    --dark: 	#d63d00;
+  }
+
+  html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+  }
+  
+  header {
+    padding: 5px 0px 10px 0px;
+    position: fixed;
+    top: 0;
+    display: grid;  
+    grid-gap:5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+     " mn mn sb . . . "; 
+    background-color: var(--primary);
+    width: 100%;
+    margin-bottom: 0px;  
+    background-color: rgb(20, 20, 20);
+  }
+
+  .nava {
+    grid-area: mn;
+    padding: 5px 10px 0 20px;
+    margin-left: 40px;
+  }
+  
+  .nava a {
+    color: var(--light);
+    text-decoration: none;
+    margin: 5px;  
+    font-family: Impact, sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  
+  .nava a:hover {
+    color: var(--dark);
+  }
+  
+
+  @media(max-width: 900px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  }
+  
+  @media(max-width: 700px) {
+  
+    header {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+      "nt nt nt  .  .  . sb . . . "
+      "mn mn mn mn mn mn  mn mn mn mn";
+    }
+  }
+  
+  @media(max-width: 500px) {
+    header {
+      margin: 0;
+      padding: 20px 0 0 0;
+      position: static;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: 
+      "nt"    
+      "mn"
+      "sb";
+      text-align: center;
+    }
+    }
+
+body{
+  font-family: Abel, "Lucida Console", monospace;
+}
+
+
+    .aukerak {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .opzinuak {
+      display: none;
+      position: absolute;
+      background-color: #1a1a1a;
+      opacity: 0.8;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .opzinuak a {
+      color: var(--light);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+    }
+    
+    #eee:hover {background-color: rgba(0, 0, 0, 0.24);}
+    
+    .aukerak:hover .opzinuak {display: block;}
+
+    .opzinuak a:hover {
+      color: var(--light);
+    }
+    
+section{
+  margin: 30px auto;
+  width: 90%;
+  color: #faebcd;
+  font-size: 20px;
+}
+summary{
+  cursor: pointer;
+  padding: 20px;
+  font-family: "Arvo", Georgia, serif;
+  font-size: 28px;
+  border-bottom: 2px solid;
+  color: #ffeb7c;
+}
+
+*{
+  outline: 0;
+}
+
+#zatixak{
+    width: 48%;
+    margin-bottom:-1%;
+    }
+
+#zatixak2{
+    width: 17%;
+    margin-bottom: -1%;
+}
+
+#zatixak3{
+  width: 40%;
+  margin-bottom: -1%;
+}
+
+#zatixak4{
+  width: 36%;
+  margin-bottom: -0.75%;
+}
+
+#zatixak5{
+  width: 32%;
+  margin-bottom: -1%;
+}
+
+#zatixak6{
+  width: 38%;
+  margin-bottom: -1%;
+}
+
+    details > summary {
+        list-style-type: none;
+    }
+    
+    details > summary::-webkit-details-marker {
+        display: none;
+    }
+    
+    details > summary::before {
+        content: '⇢  ';
+    }
+    
+    details[open] > summary::before {
+        content: '⇣         ';
+    }
+
+#formuliak{
+  max-width:100%;
+  max-height:100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+        
+#legia{
+  max-width:20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ariketak{
+    transition: all 0.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#ariketak:hover {
+    transform: scale(1.09);
+}
+
+.herena2{
+    width: 31%;
+    float: left;
+    margin: 2% 0 3% 2%;
+    text-align: center;
+    color:white;
+}
+
+details{
+margin-top: 0.5%;
+}
+
+.zatixa1 {
+float: left;
+width: 50%;
+}
+
+.zatixa2 {
+float: left;
+width: 50%;
+height: 30%;
+}
+
+.zatixa3, .zatixa4 {
+float: left;
+width: 30%;
+height: 50%;
+}
+
+.zatixa4{
+padding-left: 5%
+}
+
+.zatixa5{
+float: left;
+width: 60%;
+}
+
+.zatixa6 {
+float: left;
+width: 40%;
+height: 30%;
+}
+
+#bidixua{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
